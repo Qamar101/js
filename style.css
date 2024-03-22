@@ -1,0 +1,286 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar customization */
+.navbar-custom {
+    background-color: #9fa395;
+}
+
+/* Header styles */
+header {
+    padding: 1rem;
+}
+
+/* Brand name styles */
+#UC {
+    font-size: 3.5vw;
+    font-family: "Crushed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f9faf8;
+}
+
+/* Responsive column layout */
+.col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styles */
+.row h4 {
+    padding-top: 10vw;
+    font-size: 5vw;
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Animation duration */
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 4s;
+    animation-delay: 0.5s;
+}
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 4s;
+    animation-delay: 0.8s;
+}
+
+/* Subheading styles */
+.row h6 {
+    font-size: 3vw;
+}
+
+/* Product gallery styles */
+.glide__slide {
+    height: 40vh;
+    width: auto;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Products section styles */
+#products {
+    margin-top: 10vw;
+    padding: 4vw;
+    background-color: rgb(188, 184, 155);
+}
+
+/* Product details section styles */
+#product-details {
+    padding: 4vw;
+    background-color: rgb(243, 240, 209);
+}
+
+/* Title and subtitle styles */
+.titlehead {
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+.titlehead h4 {
+    font-size: 4vw;
+}
+
+.titlehead h6 {
+    font-size: 3vw;
+}
+
+/* Card body styles */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card title styles */
+.card-title {
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+/* Card image styles */
+.card-img-top {
+    object-fit: cover;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 1vw 2vw;
+    font-size: 1vh;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5f7067;
+}
+
+.btn-primary {
+    background-color: #9fa395;
+}
+
+.btn-primary:hover {
+    background-color: #748271;
+}
+
+/* Contact section styles */
+#contact {
+    padding-top: 4vh;
+   
+}
+
+#contact h2 {
+    font-size: 4vw;
+}
+
+/* Map container styles */
+#map-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    background-color: #9fa395;
+    margin-top: 4vh;
+}
+
+/* Map styles */
+#map {
+    height: 20vh;
+    width: 30vw;
+    padding-right: vw;
+}
+
+/* Address styles */
+#address h6 {
+    font-size: 4vw;
+    color: beige;
+    padding-left: 2vw;
+}
+
+#address p {
+    color: rgb(82, 82, 82);
+    padding-left: 2vw;
+    font-size: 2vw;
+}
+
+/* Media queries for large devices */
+@media only screen and (min-width: 992px) {
+    .col-12 {
+        align-items: flex-start;
+    }
+
+    #UC {
+        font-size: 2vw;
+    }
+
+    .titlehead h4 {
+        font-size: 2.5vw;
+    }
+
+    .titlehead h6 {
+        font-size: 1.5vw;
+    }
+
+    .row h4 {
+        font-size: 3vw;
+        padding-top: 5vw;
+    }
+
+    .row h6 {
+        font-size: 1.5vw;
+    }
+
+    .glide__slide {
+        height: 30vw;
+    }
+
+    .glide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #products {
+        margin-top: 5vw;
+    }
+
+    #products-container {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #products-container img {
+        width: 100%;
+        height: 70%;
+    }
+
+    #cardbox,
+    #cardbox2,
+    #cardbox3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+    }
+
+    .card-title {
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+    }
+
+    #card1,
+    #card2,
+    #card3 .btn {
+        padding: 10px 20px;
+        font-size: 1vw;
+        border-radius: 5px;
+    }
+
+    #contact h2 {
+        font-size: 2.5vw;
+    }
+
+    .form-group,
+    .form-control {
+        font-size: 1vw;
+    }
+
+    #formbtn {
+        font-size: 1vw;
+    }
+
+    #map-container {
+        height: 40vh;
+    }
+
+    #map {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    #address h6 {
+        font-size: 2vw;
+    }
+
+    #address p {
+        font-size: 0.8vw;
+    }
+}
